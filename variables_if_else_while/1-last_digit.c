@@ -19,7 +19,7 @@ int main(void)
 
 	lastDigitOf = n % 10;
 
-	printf("last digit of %d is\n", n);
+	printf("last digit of %d is ", n);
 
 	if (lastDigitOf > 5)
 	{
