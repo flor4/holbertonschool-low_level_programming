@@ -13,7 +13,7 @@ int main(void)
 {
 char lowerCaseAlphabetRev = 'z';
 
-for (; lowerCaseAlphabetRev >= 'a'; lowerCaseAlphabetRev++)
+for (; lowerCaseAlphabetRev >= 'a'; lowerCaseAlphabetRev--)
 
 {
 putchar(lowerCaseAlphabetRev);
