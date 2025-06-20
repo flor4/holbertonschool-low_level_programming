@@ -20,5 +20,5 @@ _putchar(lowerCaseAlpha);
 
 _putchar('\n');
 
-return (0);
+return;
 }
