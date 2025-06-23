@@ -14,7 +14,7 @@ void print_numbers(void)
 
 	char print_numbers;
 
-	for (print_numbers = 0; print_numbers <= 9; print_numbers++)
+	for (print_numbers = 48; print_numbers <= 57; print_numbers++)
 
 
 	{
