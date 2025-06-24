@@ -25,7 +25,7 @@ int main(void)
 
 		if (num % 3 == 0 && num % 5 == 0)
 		{
-			printf("Fizzbuzz" );
+			printf("Fizzbuzz");
 		}
 
 		else if (num % 3 == 0)
@@ -53,6 +53,6 @@ int main(void)
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
 
