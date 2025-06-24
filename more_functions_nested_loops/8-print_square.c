@@ -25,9 +25,9 @@ void print_square(int size)
 
 	else
 
-		for (column = 0; column <= size; column++)
+		for (column = 0; column < size; column++)
 		{
-			for (row = 0; row <= size; row++)
+			for (row = 0; row < size; row++)
 
 			{
 				_putchar(35);
