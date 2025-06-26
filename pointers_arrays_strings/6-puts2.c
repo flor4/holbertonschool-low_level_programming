@@ -16,7 +16,7 @@ void puts2(char *str)
 
 
 {
-	int i= 0;
+	int i = 0;
 	int everyOtherChar = 0;
 
 	while (str[everyOtherChar] != '\0')
@@ -28,7 +28,7 @@ void puts2(char *str)
 	{
 		_putchar(str[i]);
 
-		i += 2;
+		i + = 2;
 	}
 
 	_putchar('\n');
