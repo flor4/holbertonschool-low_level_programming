@@ -10,35 +10,30 @@
  */
 
 char *cap_string(char *str)
-
-
 {
-	int index = 0;
-	int sepIndex;
-
-	char separators[] = " \t\n,;.!?\"(){}"; /* '\t' is for tabulation*/
-
+	int i = 0;
+	char sep[] = " \t\n,;.!?\"(){}";
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
-		str[0] = str[0] - 32;
+		str[0] -= 32;
 	}
 
-	while (str[index] != '\0')
+	while (str[i] != '\0')
 	{
-		for (sepIndex = 0; separators[sepIndex] != '\0'; sepIndex++)
+		int j = 0;
 
-			if (sepIndex == separators[sepIndex] &&
-					str[index + 1] >= 'a' && str[index + 1] <= 'z')
+		while (sep[j] != '\0')
+		{
+			if (str[i] == sep[j] && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
 			{
-				str[index + 1] = str[index + 1] - 32;
+				str[i + 1] -= 32;
 				break;
 			}
-		index++;
+			j++;
+		}
+		i++;
 	}
+
 	return (str);
-
 }
-
-
-
