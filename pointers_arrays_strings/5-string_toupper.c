@@ -15,12 +15,12 @@ char *string_toupper(char *str)
 	int i;
 
 
-	for (i = 0; i <= str[i]; i++)
+	for (i = 0; i < str[i] ; i++)
 	{
-		if (str[i] >= 97 && str[i] <= 122)
+		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] - 32;
 
-		else if (str[i] >= 65 && str[i] <= 90)
+		else if (str[i] >= 'A' && str[i] <= 'Z')
 			str[i] = str[i] + 32;
 
 	}
