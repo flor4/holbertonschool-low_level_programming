@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <string.h>
 
 /**
  * copy_string - function to duplicate a string.
@@ -56,7 +55,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new_doggy->owner = copy_string(owner);
-	if (new_doggy == NULL)
+	if (new_doggy->owner == NULL)
 	{
 		free(new_doggy->name);
 		free(new_doggy);
