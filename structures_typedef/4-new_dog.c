@@ -1,68 +1,47 @@
 #include "dog.h"
 
 /**
- * copy_string - function to duplicate a string.
+ * new_dog - function that creates a new dog
  *
- * @str: string.
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: name of the dog
  *
- * Return: copy or NULL.
- */
-
-
-char *copy_string(const char *str)
-{
-	char *copy;
-
-	if (str == NULL)
-		return (NULL);
-
-	copy = malloc(strlen(str) + 1);
-
-	if (copy == NULL)
-		return (NULL);
-
-	strcpy(copy, str);
-
-	return (copy);
-
-}
-
-/**
- * *new_dog - function that create a new dog.
- *
- * @name: of the new dog.
- * @age: of the new dog.
- * @owner: of the new dog.
- *
- * Return: NULL if fail.
- *
+ * Return: 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_doggy;
+	dog_t *new;
+	int i, len_name = 0, len_owner = 0;
 
-	new_doggy = malloc(sizeof(dog_t));
+	while (name && name[len_name])
+		len_name++;
+	while (owner && owner[len_owner])
+		len_owner++;
 
-	if (new_doggy == NULL)
+	new = malloc(sizeof(dog_t));
+	if (!new)
 		return (NULL);
 
-	new_doggy->name = copy_string(name);
-	if (new_doggy->name == NULL)
+	new->name = malloc(len_name + 1);
+	new->owner = malloc(len_owner + 1);
+	if (!new->name || !new->owner)
 	{
-		free(new_doggy);
-		return (NULL);
+		free(new->name);
+		free(new->owner);
+		free(new);
 	}
 
-	new_doggy->owner = copy_string(owner);
-	if (new_doggy->owner == NULL)
-	{
-		free(new_doggy->name);
-		free(new_doggy);
-		return (NULL);
-	}
+	for (i = 0 ; i < len_name ; i++)
+		new->name[i] = name[i];
+	new->name[i] = '\0';
 
-	new_doggy->age = age;
+	for (i = 0 ; i < len_owner ; i++)
+		new->owner[i] = owner[i];
+	new->owner[i] = '\0';
 
-	return (new_doggy);
+	new->age = age;
+
+	return (new);
 }
