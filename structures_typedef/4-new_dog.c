@@ -12,7 +12,7 @@
 
 char *copy_string(const char *str)
 {
-char *copy; 
+char *copy;
 
 	if (str == NULL)
 		return (NULL);
