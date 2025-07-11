@@ -12,7 +12,7 @@
 
 char *copy_string(const char *str)
 {
-char *copy;
+	char *copy;
 
 	if (str == NULL)
 		return (NULL);
@@ -21,7 +21,9 @@ char *copy;
 
 	if (copy == NULL)
 		return (NULL);
+
 	strcpy(copy, str);
+
 	return (copy);
 
 }
@@ -36,19 +38,23 @@ char *copy;
  * Return: NULL if fail.
  *
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_doggy = malloc(sizeof(dog_t));
+	dog_t *new_doggy;
+
+	new_doggy = malloc(sizeof(dog_t));
 
 	if (new_doggy == NULL)
 		return (NULL);
 
 	new_doggy->name = copy_string(name);
-		if (new_doggy->name == NULL)
-		{
-			free(new_doggy);
-			return (NULL);
-		}
+	if (new_doggy->name == NULL)
+	{
+		free(new_doggy);
+		return (NULL);
+	}
+
 	new_doggy->owner = copy_string(owner);
 	if (new_doggy == NULL)
 	{
