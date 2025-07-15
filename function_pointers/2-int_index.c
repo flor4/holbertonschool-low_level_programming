@@ -9,7 +9,7 @@
  * to be used to compare values.
  *
  * Return: no matched -1.
- *size <=0 return -1.
+ * size <=0, return -1.
  *
  */
 
@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (size <= 0)
+	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
 
 	for (i = 0; i < size; i++)
