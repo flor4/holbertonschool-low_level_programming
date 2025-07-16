@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
 	result = f(num1, num2);
 
-	printf("%i\n", result);
+	printf("%d\n", result);
 
 	return (0);
 }
