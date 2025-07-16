@@ -16,7 +16,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtraction of two intergers.
+ * op_sub - subtraction of two integers.
  *
  * @a : integer.
  * @b : integer.
@@ -31,7 +31,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiplication of two intergers.
+ * op_mul - multiplication of two integers.
  *
  * @a : integer.
  * @b : integer.
@@ -46,7 +46,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - division of two intergers.
+ * op_div - division of two integers.
  *
  * @a : integer.
  * @b : integer.
@@ -61,7 +61,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - modulo of two intergers.
+ * op_mod - modulo of two integers.
  *
  * @a : integer.
  * @b : integer.
