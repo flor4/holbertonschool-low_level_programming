@@ -2,12 +2,12 @@ C - Singly linked lists
 
 A data structure consisting of a group of nodes linked together linearly. Each node consists of data elements and a link to the next node.
 
-A node is a collection of two sub-elements or parts. A data part that stores the element and a next part that stores the link to the next node. 
-Linked List: A linked list is formed when many such nodes are linked together to form a chain. 
+A node is a collection of two sub-elements or parts. A data part that stores the element and a next part that stores the link to the next node.
+Linked List: A linked list is formed when many such nodes are linked together to form a chain.
 Each node points to the next node present in the order.
 
 
-TASKS 
+TASKS
 0. Print list
 
 Write a function that prints all the elements of a list_t list:
@@ -39,8 +39,8 @@ Write a function that adds a new node at the END of a list_t list.
 
 4. Free list
 
-Write a function that frees a list_it list. 
-- Return: free(). 
+Write a function that frees a list_it list.
+- Return: free().
 
 
 
