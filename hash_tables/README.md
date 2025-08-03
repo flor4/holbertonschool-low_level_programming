@@ -10,6 +10,7 @@ ABOUT LAST TASK:
 Your hash table is organized like this:
 
 <pre> ```text ht └── array (table) ├── [0] → node1 → node2 → NULL ├── [1] → NULL ├── [2] → node3 → NULL └── ... ``` </pre>
+
 Each index [i] in the array can point to:
 
 A single node (hash_node_t)
