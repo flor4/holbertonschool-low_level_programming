@@ -7,9 +7,18 @@ The benefit of using a hash table is its very fast access time.
 
 ABOUT LAST TASK: 
 
-Your hash table is organized like this:
 
-<pre> ```text ht └── array (table) ├── [0] → node1 → node2 → NULL ├── [1] → NULL ├── [2] → node3 → NULL └── ... ``` </pre>
+### 🗂 Hash Table Internal Structure
+
+```text
+ht
+ └── array (table)
+     ├── [0] → node1 → node2 → NULL
+     ├── [1] → NULL
+     ├── [2] → node3 → NULL
+     └── ...
+```
+
 
 Each index [i] in the array can point to:
 
